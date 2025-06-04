@@ -298,7 +298,7 @@ form.addEventListener('submit', async (e) => {
   uploadedBy: user.uid, // 🔐 Save admin UID
   timestamp: firebase.firestore.FieldValue.serverTimestamp()
 });
-  emailjs.send("service_v95ykqa", "template_4spudql", {
+  emailjs.send("", "", {
   to_email: firebase.auth().currentUser.email,
   to_name: firebase.auth().currentUser.displayName || "Dear Admin",
   book_name: bookName,
